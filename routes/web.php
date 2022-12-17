@@ -20,4 +20,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+
+    Route::post('models/{model}/attachments', [ModelAttachmentController::class, 'store']);
 });

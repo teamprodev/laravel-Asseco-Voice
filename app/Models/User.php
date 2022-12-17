@@ -3,12 +3,14 @@
 namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Asseco\Attachments\App\Traits\Attachable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
 class User extends \TCG\Voyager\Models\User
 {
+    use Attachable;
     use HasFactory, Notifiable;
 
     /**

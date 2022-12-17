@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45b19fc9f3ef83a379094a0b32a5c11d",
+    "content-hash": "cda59b005b8e7cad734bd6d0512aef73",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -127,6 +127,171 @@
                 "source": "https://github.com/asm89/stack-cors/tree/v2.1.1"
             },
             "time": "2022-01-18T09:12:03+00:00"
+        },
+        {
+            "name": "asseco-voice/laravel-attachments",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asseco-voice/laravel-attachments.git",
+                "reference": "be1ac4049deb3f27f6139a5d3acffc19aaf0df41"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asseco-voice/laravel-attachments/zipball/be1ac4049deb3f27f6139a5d3acffc19aaf0df41",
+                "reference": "be1ac4049deb3f27f6139a5d3acffc19aaf0df41",
+                "shasum": ""
+            },
+            "require": {
+                "asseco-voice/laravel-common": "^2.0",
+                "laravel/framework": "^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^7.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asseco\\Attachments\\AttachmentsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asseco\\Attachments\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel support for attachments",
+            "keywords": [
+                "attachments",
+                "database",
+                "laravel",
+                "microservices",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/asseco-voice/laravel-attachments/issues",
+                "source": "https://github.com/asseco-voice/laravel-attachments/tree/v1.1.0"
+            },
+            "time": "2022-09-05T12:01:05+00:00"
+        },
+        {
+            "name": "asseco-voice/laravel-blueprint-audit",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asseco-voice/laravel-blueprint-audit.git",
+                "reference": "d3562464ceb396c47f4c64db0c19661750afed72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asseco-voice/laravel-blueprint-audit/zipball/d3562464ceb396c47f4c64db0c19661750afed72",
+                "reference": "d3562464ceb396c47f4c64db0c19661750afed72",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^7.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asseco\\BlueprintAudit\\BlueprintAuditServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asseco\\BlueprintAudit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel support for additional blueprint methods",
+            "keywords": [
+                "database",
+                "laravel",
+                "microservices",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/asseco-voice/laravel-blueprint-audit/issues",
+                "source": "https://github.com/asseco-voice/laravel-blueprint-audit/tree/v1.1.0"
+            },
+            "time": "2022-08-30T12:48:14+00:00"
+        },
+        {
+            "name": "asseco-voice/laravel-common",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asseco-voice/laravel-common.git",
+                "reference": "9664177ebb31c35bf76b9898b528a75b5ff0445d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asseco-voice/laravel-common/zipball/9664177ebb31c35bf76b9898b528a75b5ff0445d",
+                "reference": "9664177ebb31c35bf76b9898b528a75b5ff0445d",
+                "shasum": ""
+            },
+            "require": {
+                "asseco-voice/laravel-blueprint-audit": "^1.0",
+                "laravel/framework": "^9.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "fakerphp/faker": "^1.9.1",
+                "mockery/mockery": "^1.4.4",
+                "orchestra/testbench": "^7.4",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asseco\\Common\\CommonServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asseco\\Common\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel common",
+            "keywords": [
+                "database",
+                "laravel",
+                "microservices",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/asseco-voice/laravel-common/issues",
+                "source": "https://github.com/asseco-voice/laravel-common/tree/v2.2.0"
+            },
+            "time": "2022-11-25T12:00:06+00:00"
         },
         {
             "name": "brick/math",
